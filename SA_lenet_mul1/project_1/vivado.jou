@@ -1,0 +1,24 @@
+#-----------------------------------------------------------
+# Vivado v2019.2 (64-bit)
+# SW Build 2708876 on Wed Nov  6 21:40:23 MST 2019
+# IP Build 2700528 on Thu Nov  7 00:09:20 MST 2019
+# Start of session at: Thu Nov 14 08:02:59 2024
+# Process ID: 12340
+# Current directory: D:/HuaweiMoveData/Users/kiwi/Desktop/SA_lenet_mul/project_1
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent12868 D:\HuaweiMoveData\Users\kiwi\Desktop\SA_lenet_mul\project_1\project_1.xpr
+# Log file: D:/HuaweiMoveData/Users/kiwi/Desktop/SA_lenet_mul/project_1/vivado.log
+# Journal file: D:/HuaweiMoveData/Users/kiwi/Desktop/SA_lenet_mul/project_1\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project D:/HuaweiMoveData/Users/kiwi/Desktop/SA_lenet_mul/project_1/project_1.xpr
+update_compile_order -fileset sources_1
+open_hw_manager
+open_run impl_1
+close_design
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+wait_on_run impl_1
+open_run impl_1
+reset_run impl_1 -prev_step 
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+wait_on_run impl_1
