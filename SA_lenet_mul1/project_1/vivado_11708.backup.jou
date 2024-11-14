@@ -1,0 +1,64 @@
+#-----------------------------------------------------------
+# Vivado v2019.2 (64-bit)
+# SW Build 2708876 on Wed Nov  6 21:40:23 MST 2019
+# IP Build 2700528 on Thu Nov  7 00:09:20 MST 2019
+# Start of session at: Wed Nov 13 15:06:34 2024
+# Process ID: 11708
+# Current directory: D:/HuaweiMoveData/Users/kiwi/Desktop/SA_lenet_mul/project_1
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent9384 D:\HuaweiMoveData\Users\kiwi\Desktop\SA_lenet_mul\project_1\project_1.xpr
+# Log file: D:/HuaweiMoveData/Users/kiwi/Desktop/SA_lenet_mul/project_1/vivado.log
+# Journal file: D:/HuaweiMoveData/Users/kiwi/Desktop/SA_lenet_mul/project_1\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project D:/HuaweiMoveData/Users/kiwi/Desktop/SA_lenet_mul/project_1/project_1.xpr
+update_compile_order -fileset sources_1
+launch_simulation
+source test_top.tcl
+current_wave_config {Untitled 1}
+add_wave {{/test_top/kf/clk}} {{/test_top/kf/rst_n}} {{/test_top/kf/key_in}} {{/test_top/kf/key_out}} {{/test_top/kf/cnt_delay}} {{/test_top/kf/key_r0}} {{/test_top/kf/key_r1}} {{/test_top/kf/key_r2}} {{/test_top/kf/flag}} {{/test_top/kf/nedge}} {{/test_top/kf/MAX}} 
+restart
+run 100 us
+restart
+run 10000000 us
+relaunch_sim
+relaunch_sim
+current_wave_config {Untitled 1}
+add_wave {{/test_top/u_data_ram/clk}} {{/test_top/u_data_ram/rst_n}} {{/test_top/u_data_ram/image_index}} {{/test_top/u_data_ram/STRIDE}} {{/test_top/u_data_ram/addr_r_x}} {{/test_top/u_data_ram/addr_r_y}} {{/test_top/u_data_ram/ram_select_r_x}} {{/test_top/u_data_ram/ram_select_r_y}} {{/test_top/u_data_ram/KERNEL_DIM}} {{/test_top/u_data_ram/data_out_valid}} {{/test_top/u_data_ram/data_out}} {{/test_top/u_data_ram/addr_r}} {{/test_top/u_data_ram/rd_en}} {{/test_top/u_data_ram/rd_en_r}} {{/test_top/u_data_ram/ram_select_r_x_r}} {{/test_top/u_data_ram/addr_r_x_r}} {{/test_top/u_data_ram/dout}} {{/test_top/u_data_ram/i}} {{/test_top/u_data_ram/j}} {{/test_top/u_data_ram/DW}} {{/test_top/u_data_ram/RAM_NUM}} {{/test_top/u_data_ram/RAM_SIZE}} {{/test_top/u_data_ram/ADDR_DW}} {{/test_top/u_data_ram/ROWS}} 
+relaunch_sim
+relaunch_sim
+relaunch_sim
+relaunch_sim
+relaunch_sim
+relaunch_sim
+run 500 us
+relaunch_sim
+run 500 us
+run 500 us
+current_wave_config {Untitled 1}
+add_wave {{/test_top/predict_index}} 
+restart
+run 1000 us
+run 500 us
+relaunch_sim
+run 500 us
+run 500 us
+current_wave_config {Untitled 1}
+add_wave {{/test_top/u_cnn/clk}} {{/test_top/u_cnn/rst_n}} {{/test_top/u_cnn/mem_initial_sig}} {{/test_top/u_cnn/kernel_dim}} {{/test_top/u_cnn/kernel_num}} {{/test_top/u_cnn/stride}} {{/test_top/u_cnn/layer_index}} {{/test_top/u_cnn/infmap_rows}} {{/test_top/u_cnn/din_inf}} {{/test_top/u_cnn/RA_enable}} {{/test_top/u_cnn/fold_rows_cur_o_x}} {{/test_top/u_cnn/addr_inf_x}} {{/test_top/u_cnn/addr_inf_y}} {{/test_top/u_cnn/fold_rows_cur_o_y}} {{/test_top/u_cnn/din_weight}} {{/test_top/u_cnn/cols_num_cur_o}} {{/test_top/u_cnn/cols_num_cur_kernel_element_o}} {{/test_top/u_cnn/addr_weight}} {{/test_top/u_cnn/din_bias}} {{/test_top/u_cnn/RA_enable_bias}} {{/test_top/u_cnn/addr_bias}} {{/test_top/u_cnn/cnt_ch_o}} {{/test_top/u_cnn/output_data}} {{/test_top/u_cnn/ch_out}} {{/test_top/u_cnn/ram_select_out}} {{/test_top/u_cnn/addr_out}} {{/test_top/u_cnn/WR_enable_out}} {{/test_top/u_cnn/addr_out_fc}} {{/test_top/u_cnn/predict_index_o}} {{/test_top/u_cnn/cnt_recognition}} {{/test_top/u_cnn/compare_temp}} {{/test_top/u_cnn/predict_flag}} {{/test_top/u_cnn/predict_index}} {{/test_top/u_cnn/KERNEL_DIM}} {{/test_top/u_cnn/KERNEL_DIM2}} {{/test_top/u_cnn/KERNEL_NUM}} {{/test_top/u_cnn/IN_CHANNEL}} {{/test_top/u_cnn/STRIDE}} {{/test_top/u_cnn/INFMAP_ROWS}} {{/test_top/u_cnn/INFMAP_COLS}} {{/test_top/u_cnn/OFMAP_ROWS}} {{/test_top/u_cnn/OFMAP_COLS}} {{/test_top/u_cnn/OFMAP}} {{/test_top/u_cnn/OUT_CHANNEL}} {{/test_top/u_cnn/FOLD_ROWS}} {{/test_top/u_cnn/FOLD_COLS}} {{/test_top/u_cnn/FOLD_PER_ROWS_IN}} {{/test_top/u_cnn/FOLD_ROWS_IN}} {{/test_top/u_cnn/FOLD_PER_COLS_IN}} {{/test_top/u_cnn/POOLING_COLS}} {{/test_top/u_cnn/POOLING_KERNEL_DIM}} {{/test_top/u_cnn/POOLING_KERNEL_DIM2}} {{/test_top/u_cnn/POOLING_STRIDE}} {{/test_top/u_cnn/POOLING_WINDOW_NUM}} {{/test_top/u_cnn/POOLING_WINDOW_PER_PERIOD}} {{/test_top/u_cnn/POOLING_WINDOW_LAST_PERIOD}} {{/test_top/u_cnn/KERNEL_ELEMENT}} {{/test_top/u_cnn/start_cal_folding_flag}} {{/test_top/u_cnn/acti_mode}} {{/test_top/u_cnn/cnn_sig}} {{/test_top/u_cnn/outMem2inMem_flag}} {{/test_top/u_cnn/layer_switch_signal}} {{/test_top/u_cnn/pooling_en}} {{/test_top/u_cnn/i}} {{/test_top/u_cnn/j}} {{/test_top/u_cnn/a}} {{/test_top/u_cnn/b}} {{/test_top/u_cnn/c}} {{/test_top/u_cnn/state_flag}} {{/test_top/u_cnn/cur_state}} {{/test_top/u_cnn/next_state}} {{/test_top/u_cnn/input_flag}} {{/test_top/u_cnn/en}} {{/test_top/u_cnn/data_enable}} {{/test_top/u_cnn/switch_flag}} {{/test_top/u_cnn/data_enable1}} {{/test_top/u_cnn/data_enable2}} {{/test_top/u_cnn/data_enable3}} {{/test_top/u_cnn/fold_flag}} {{/test_top/u_cnn/data_enable_all}} {{/test_top/u_cnn/out_flag}} {{/test_top/u_cnn/pooling_start_flag}} {{/test_top/u_cnn/acti_start_flag}} {{/test_top/u_cnn/out_data}} {{/test_top/u_cnn/out_data_temp}} {{/test_top/u_cnn/din_bias_temp}} {{/test_top/u_cnn/out_temp1}} {{/test_top/u_cnn/cnt}} {{/test_top/u_cnn/cnt_flag}} {{/test_top/u_cnn/cnt_enable}} {{/test_top/u_cnn/cnt_enable_down}} {{/test_top/u_cnn/cnt_kernel}} {{/test_top/u_cnn/cnt_kernel_x}} {{/test_top/u_cnn/cnt_kernel_y}} {{/test_top/u_cnn/cnt_ch}} {{/test_top/u_cnn/cnt_ch_num}} {{/test_top/u_cnn/fold_rows_cur}} {{/test_top/u_cnn/fold_rows_cur_x}} {{/test_top/u_cnn/fold_rows_cur_y}} {{/test_top/u_cnn/fold_cols_cur}} {{/test_top/u_cnn/fold_rows_past}} {{/test_top/u_cnn/fold_cols_past}} {{/test_top/u_cnn/cols_num_cur}} {{/test_top/u_cnn/cols_num_past}} {{/test_top/u_cnn/cols_num_cur_kernel_element}} {{/test_top/u_cnn/pooling_temp1}} {{/test_top/u_cnn/pooling_temp2}} {{/test_top/u_cnn/fc_temp}} {{/test_top/u_cnn/pooling_signal}} {{/test_top/u_cnn/pooling_flag}} {{/test_top/u_cnn/cnt_PL_window}} {{/test_top/u_cnn/cnt_PL_kernel_x}} {{/test_top/u_cnn/cnt_PL_kernel_y}} {{/test_top/u_cnn/input_flag_PL}} {{/test_top/u_cnn/out_flag_pooling}} {{/test_top/u_cnn/data_in_pooling}} {{/test_top/u_cnn/data_out_pooling}} {{/test_top/u_cnn/data_out_acti}} {{/test_top/u_cnn/acti_finish_flag}} {{/test_top/u_cnn/input_data2Acti}} {{/test_top/u_cnn/input_flag2Acti}} {{/test_top/u_cnn/cnt_out_x}} {{/test_top/u_cnn/cnt_out_y}} {{/test_top/u_cnn/cnt_out_y_baseline}} {{/test_top/u_cnn/cnt_out_ch}} {{/test_top/u_cnn/fc_flag}} {{/test_top/u_cnn/cnt_fc}} {{/test_top/u_cnn/reg_index}} {{/test_top/u_cnn/o}} {{/test_top/u_cnn/compare_sig}} {{/test_top/u_cnn/cnt_compare}} {{/test_top/u_cnn/max_temp}} {{/test_top/u_cnn/max_index}} {{/test_top/u_cnn/DW}} {{/test_top/u_cnn/ADDR_DW}} {{/test_top/u_cnn/CNT_W}} {{/test_top/u_cnn/ROWS}} {{/test_top/u_cnn/COLS}} {{/test_top/u_cnn/IDLE}} {{/test_top/u_cnn/CAL_FOLDING}} 
+restart
+run 500 us
+run 100 us
+relaunch_sim
+run 500 us
+run 500 us
+relaunch_sim
+open_hw_manager
+connect_hw_server -allow_non_jtag
+open_hw_target
+set_property PROGRAM.FILE {D:/HuaweiMoveData/Users/kiwi/Desktop/SA_lenet_mul/project_1/project_1.runs/impl_1/in_out.bit} [get_hw_devices xc7z020_1]
+current_hw_device [get_hw_devices xc7z020_1]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7z020_1] 0]
+close_hw_manager
+open_hw_manager
+connect_hw_server -allow_non_jtag
+close_hw_manager
+close_sim
