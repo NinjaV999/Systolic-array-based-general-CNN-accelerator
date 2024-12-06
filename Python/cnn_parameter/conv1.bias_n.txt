@@ -1,6 +1,0 @@
-param_base[0] = 1161;
-param_base[1] = 10587;
-param_base[2] = 4162;
-param_base[3] = -10342;
-param_base[4] = -356;
-param_base[5] = 16;
