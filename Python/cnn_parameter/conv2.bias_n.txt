@@ -1,0 +1,16 @@
+param_base[0] = 2770;
+param_base[1] = -248;
+param_base[2] = 2298;
+param_base[3] = -3184;
+param_base[4] = -1596;
+param_base[5] = -212;
+param_base[6] = 1687;
+param_base[7] = 255;
+param_base[8] = -5489;
+param_base[9] = -2138;
+param_base[10] = 2805;
+param_base[11] = -3091;
+param_base[12] = -1458;
+param_base[13] = -896;
+param_base[14] = -4383;
+param_base[15] = -156;
