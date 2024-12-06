@@ -84,7 +84,7 @@ void conv_layer (int *conv_result_base,int in_row , int in_col,int o_row, int o_
 		for(int n=0 ; n<= conv_kernel*conv_kernel*in_channel-1; n=n+1){
 						kernel_s[n] = kernel [m*conv_kernel*conv_kernel*in_channel+n];
 
-				}  // »ñÈ¡µ½µ±Ç°kernel_numµÄ¾ØÕóºÍÆ«ÖÃ£¬ÓÃÕâ¸öºÍËùÓÐµÄÊäÈë¾ØÕó½øÐÐ³Ë·¨ÔËËã£¬¾ÍµÃµ½ÁËÒ»¸öÊä³öÍ¨µÀµÄËùÓÐÏñËØÖµ
+				}  // èŽ·å–åˆ°å½“å‰kernel_numçš„çŸ©é˜µå’Œåç½®ï¼Œç”¨è¿™ä¸ªå’Œæ‰€æœ‰çš„è¾“å…¥çŸ©é˜µè¿›è¡Œä¹˜æ³•è¿ç®—ï¼Œå°±å¾—åˆ°äº†ä¸€ä¸ªè¾“å‡ºé€šé“çš„æ‰€æœ‰åƒç´ å€¼
 
 		for (int i =0;i <= o_row-1; i++) {
 
@@ -128,7 +128,7 @@ void conv_layer_relu (short *conv_result_base,int in_row , int in_col,int o_row,
 		for(int n=0 ; n<= conv_kernel*conv_kernel*in_channel-1; n=n+1){
 						kernel_s[n] = kernel [m*conv_kernel*conv_kernel*in_channel+n];
 
-				}  // »ñÈ¡µ½µ±Ç°kernel_numµÄ¾ØÕóºÍÆ«ÖÃ£¬ÓÃÕâ¸öºÍËùÓÐµÄÊäÈë¾ØÕó½øÐÐ³Ë·¨ÔËËã£¬¾ÍµÃµ½ÁËÒ»¸öÊä³öÍ¨µÀµÄËùÓÐÏñËØÖµ
+				}  // èŽ·å–åˆ°å½“å‰kernel_numçš„çŸ©é˜µå’Œåç½®ï¼Œç”¨è¿™ä¸ªå’Œæ‰€æœ‰çš„è¾“å…¥çŸ©é˜µè¿›è¡Œä¹˜æ³•è¿ç®—ï¼Œå°±å¾—åˆ°äº†ä¸€ä¸ªè¾“å‡ºé€šé“çš„æ‰€æœ‰åƒç´ å€¼
 	/*	for (int a =0 ; a <=conv_kernel*conv_kernel-1; a= a+1)
 		{
 
