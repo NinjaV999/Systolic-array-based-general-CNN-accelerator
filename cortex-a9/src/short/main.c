@@ -7,12 +7,12 @@ int main(){
 	short *conv1_param_base =(short *) CNN1_PARAM_BASE;
 	short* conv1_bias_base = (short *) CNN1_BIAS_BASE;
 	int * conv1_result =  (int *)CNN1_RESULT_BASE;
-	short * pooling1_result =  (short *) POOLING1_RESULT_BASE;  // µÚÒ»´Î¾í»ı¼ÆËãµÄ½á¹û»á´æÈëµ½µ±Ç°µÄ»ùµØÖ·µÄ¼Ä´æÆ÷ÖĞ
+	short * pooling1_result =  (short *) POOLING1_RESULT_BASE;  // ç¬¬ä¸€æ¬¡å·ç§¯è®¡ç®—çš„ç»“æœä¼šå­˜å…¥åˆ°å½“å‰çš„åŸºåœ°å€çš„å¯„å­˜å™¨ä¸­
 
 	short *conv2_param_base =(short *) CNN2_PARAM_BASE;
 	short* conv2_bias_base = (short *) CNN2_BIAS_BASE;
 	int * conv2_result =  (int *)CNN2_RESULT_BASE;
-	short * pooling2_result =  (short *) POOLING2_RESULT_BASE;  // µÚÒ»´Î¾í»ı¼ÆËãµÄ½á¹û»á´æÈëµ½µ±Ç°µÄ»ùµØÖ·µÄ¼Ä´æÆ÷ÖĞ
+	short * pooling2_result =  (short *) POOLING2_RESULT_BASE;  // ç¬¬ä¸€æ¬¡å·ç§¯è®¡ç®—çš„ç»“æœä¼šå­˜å…¥åˆ°å½“å‰çš„åŸºåœ°å€çš„å¯„å­˜å™¨ä¸­
 
 	short *conv3_param_base =(short *) CNN3_PARAM_BASE;
 	short* conv3_bias_base = (short *) CNN3_BIAS_BASE;
@@ -27,7 +27,7 @@ int main(){
 	short* fc2_bias_base = (short *) FC2_BIAS_BASE;
 	short * fc2_result =  (short *)FC2_RESULT_BASE;
 
-	  // µÚÒ»´Î¾í»ı¼ÆËãµÄ½á¹û»á´æÈëµ½µ±Ç°µÄ»ùµØÖ·µÄ¼Ä´æÆ÷ÖĞ
+	  // ç¬¬ä¸€æ¬¡å·ç§¯è®¡ç®—çš„ç»“æœä¼šå­˜å…¥åˆ°å½“å‰çš„åŸºåœ°å€çš„å¯„å­˜å™¨ä¸­
 
 
 
@@ -61,7 +61,7 @@ int main(){
 	long int temp_time = 0;
 	float time_cost = 0 ;
 	short temp [10];
-	//µÚÒ»²ã¾í»ı
+	//ç¬¬ä¸€å±‚å·ç§¯
 
 	 load_param_conv1();
 	 load_param_bias1();
@@ -93,7 +93,7 @@ while(1){
 
 	fc_layer_without_relu(fc2_result,IN_NEURON2  ,OUT_NEURON2 ,fc1_result, fc2_param_base, fc2_bias_base);
 
-	//±È½Ï »ñÈ¡×î´óË÷Òı
+	//æ¯”è¾ƒ è·å–æœ€å¤§ç´¢å¼•
 	for(int a=0; a<=OUT_NEURON2-1; a++ ){
 		if(a==0){
 
