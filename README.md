@@ -56,7 +56,7 @@ Use Modelsim to open the project file *SA_FINAL_VER.mpf*. There are 21 *.v* file
 It is worth noting that compilation errors may occur due to changes in the file paths. In this case, it is necessary to manually delete all the *.v* files in the project file and add them again.
 
 #### 3.2 Project 
-This folder contains the engineering codes for deploying the accelerator on the FPGA. In this project, we have used the parameters of the actual LeNet model. We can use the simulation function in Vivado to observe the simulation results and the project can also be directly downloaded onto the FPGA for verification. The verification process is relatively simple. We have prestored 12 pictures (the first 12 pictures in the LeNet test dataset) into the input memory. The prestored pictures can be selected by using the switches on the FPGA. Meanwhile, the inference results of the accelerator can be displayed in binary through 4 LEDs.
+This folder contains the engineering codes for deploying the accelerator on the FPGA. In this project, we have used the parameters of the actual LeNet model. We can use the simulation function in Vivado to observe the simulation results and the project can also be directly downloaded onto the FPGA for verification. 
 ##### 3.2.3 Usage method
 Open *project_1.xpr* and download the bitstream file directly to the FPGA.
 
