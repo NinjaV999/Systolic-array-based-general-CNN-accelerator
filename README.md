@@ -16,9 +16,9 @@ This folder mainly contains 4 different types of files. We will illustrate them 
 This file stores the parameters of the CNN model, with each line representing one piece of data. The file will be further processed to obtain a *.coe* file, which is used to initialize the FPGA's ROM.
 ###### 1.1.2 conv1.bias_n.txt
 This file stores the parameters of the CNN model which will be used in Coretex-A9. And the parameters are converted into *int* by multiplying  2^15 and each line represents one piece of data. 
-###### 1.1.3conv1.bias_n1.txt
-This file stores the parameters of the CNN model which will be used in Coretex-A9. And the parameters are converted into *float* and each line representes one piece of data. 
-###### 1.1.4 infamp_binary_mul.txt or infamp_original_mul.txt
+###### 1.1.3 conv1.bias_n1.txt
+This file stores the parameters of the CNN model which will be used in Coretex-A9. And the parameters are converted into *float* and each line represents one piece of data. 
+###### 1.1.4 infmap_binary_mul.txt or infmap_original_mul.txt
 This file stores multiple INFMAPs with the binarization process. (original) 
 #### 1.2 lenet_train_and_predict.ipynb
 The code is mainly used for training the LeNet model, extracting model parameters, and measuring the inference accuracy of the model after data quantization.
@@ -35,7 +35,7 @@ This file is the trained LeNet model.
 The *float* folder consists of the CNN accelerator implemented by *float* data type in Coretex-A9.
 ##### 2.1.1 mian.c
 The main function is used to connect different layers in the CNN, initialize the INFMAP,  and obtain the final calculation results.
-##### 2.1.2 claculate.h and calcualte.c
+##### 2.1.2 calculate.h and calcualte.c
 The codes define the functions used to implement the calculations of various layers in the CNN, such as convolution layers, pooling layers, and fully-connected layers.
 ##### 2.1.3 parameter.h and parameter.c
 The codes define the parameters in the CNN , as well as the parameters that may be used in the embedded processor, and also define the functions for initializing the CNN parameters in Coretex-A9.
@@ -48,9 +48,9 @@ This folder stores the codes of our CNN accelerator. We can directly open them i
 ##### 3.1.1 SA_FINAL_VER.mpf
 Project File.
 ##### 3.1.2 src
-This folder consits of the source codes.
+This folder consists of the source codes.
 ##### 3.1.3 Usage method
-Use Modelsim to open the project file *SA_FINAL_VER.mpf*. There are 21 *.v* files used in this project file, among which *test_top.v* is the top-level module. After opening the project file, then execute the complie and simulation processes in sequence (the simulation process takes about 450 μs). The final calculation results are stored in 
+Use Modelsim to open the project file *SA_FINAL_VER.mpf*. There are 21 *.v* files used in this project file, among which *test_top.v* is the top-level module. After opening the project file, then execute the compile and simulation processes in sequence (the simulation process takes about 450 μs). The final calculation results are stored in 
 *{sim:/test_top/u_fc_ram1/gen_ram_fc[3:0]/u_ram_new/mem}* .
 
 It is worth noting that compilation errors may occur due to changes in the file paths. In this case, it is necessary to manually delete all the *.v* files in the project file and add them again.
