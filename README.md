@@ -50,7 +50,7 @@ Project File.
 ##### 3.1.2 src
 This folder consists of the source codes.
 ##### 3.1.3 Usage method
-Use Modelsim to open the project file *SA_FINAL_VER.mpf*. There are 21 *.v* files used in this project file, among which *test_top.v* is the top-level module. After opening the project file, then execute the compile and simulation processes in sequence (the simulation process takes about 450 μs). The final calculation results are stored in 
+Use Modelsim to open the project file *SA_FINAL_VER.mpf*. There are 22 *.v* files used in this project file, among which *test_top.v* is the top-level module. After opening the project file, then execute the compile and simulation processes in sequence (the simulation process takes about 450 μs). The final calculation results are stored in 
 *{sim:/test_top/u_fc_ram1/gen_ram_fc[3:0]/u_ram_new/mem}* .
 
 It is worth noting that compilation errors may occur due to changes in the file paths. In this case, it is necessary to manually delete all the *.v* files in the project file and add them again.
