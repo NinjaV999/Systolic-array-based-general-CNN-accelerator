@@ -58,5 +58,5 @@ It is worth noting that compilation errors may occur due to changes in the file 
 #### 3.2 Project 
 This folder contains the engineering codes for deploying the accelerator on the FPGA. In this project, we have used the parameters of the actual LeNet model. We can use the simulation function in Vivado to observe the simulation results and the project can also be directly downloaded onto the FPGA for verification. 
 ##### 3.2.3 Usage method
-Open *project_1.xpr* and download the bitstream file directly to the FPGA.
+Open *project_1/project_1.xpr* and download the bitstream file directly to the FPGA.
 
